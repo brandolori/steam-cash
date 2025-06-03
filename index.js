@@ -12,7 +12,7 @@ const contextId = 6;
 
 // Function to fetch the user's Steam inventory
 async function fetchInventory(steamId, appId, contextId) {
-  const inventoryUrl = `https://steamcommunity.com/inventory/${steamId}/${appId}/${contextId}?l=english&count=5000`;
+  const inventoryUrl = `https://steamcommunity.com/inventory/${steamId}/${appId}/${contextId}`;
 
   try {
     const response = await axios.get(inventoryUrl);
