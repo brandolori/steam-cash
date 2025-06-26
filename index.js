@@ -3,12 +3,14 @@ const axios = require('axios');
 // Replace with your SteamID64
 const steamId = '76561198073279717';
 
-// Replace with the AppID of the game (e.g., 730 for CS:GO)
-const appId = 753;
-// const appId = 238460;
+// Replace with the AppID of the game
+// const appId = 753; // steam cards
+// const appId = 238460; // battleblock
+// const appId = 440; // tf2
+const appId = 730; // cs2
 // Context ID (usually '2' for most games)
-const contextId = 6;
-// const contextId = 2;
+// const contextId = 6; // for steam stuff
+const contextId = 2;
 
 // Function to fetch the user's Steam inventory
 async function fetchInventory(steamId, appId, contextId) {
